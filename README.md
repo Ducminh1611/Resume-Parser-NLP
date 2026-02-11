@@ -110,7 +110,7 @@ docker run --name my-parser \
   resume-parser-app
 ```
 
-📌 **Output** sẽ được sinh tự động tại:
+ **Output** sẽ được sinh tự động tại:
 
 ```
 data/processed/*.json
