@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Project specific
+data/raw/*
+!data/raw/sample_cv.pdf
+data/processed/*
+models/*/
+.dockerignore
