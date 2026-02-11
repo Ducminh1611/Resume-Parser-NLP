@@ -1,4 +1,4 @@
-# AI-Powered Resume Parser Pipeline 🌟
+# AI-Powered Resume Parser Pipeline 
 
 ## Overview
 
@@ -53,7 +53,7 @@ resume-parser/
 
 Sau quá trình **Data Cleaning**, xử lý lỗi gán nhãn thực thể (**SpaCy E024**) và huấn luyện lại mô hình, kết quả **Baseline Evaluation** đạt được như sau:
 
-### 🔎 NER Performance Metrics
+###  NER Performance Metrics
 
 | Entity Label           | Precision | Recall   | F1-Score |
 | ---------------------- | --------- | -------- | -------- |
@@ -71,7 +71,7 @@ Sau quá trình **Data Cleaning**, xử lý lỗi gán nhãn thực thể (**Spa
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 | Layer                | Technology                   |
 | -------------------- | ---------------------------- |
@@ -92,7 +92,7 @@ Sau quá trình **Data Cleaning**, xử lý lỗi gán nhãn thực thể (**Spa
 
 ---
 
-### 2️⃣ Build Docker Image
+###  Build Docker Image
 
 ```bash
 docker build -t resume-parser-app .
@@ -100,7 +100,7 @@ docker build -t resume-parser-app .
 
 ---
 
-### 3️⃣ Run Container (Mount Data)
+###  Run Container (Mount Data)
 
 Mount thư mục dữ liệu từ máy vật lý vào container:
 
@@ -118,7 +118,7 @@ data/processed/*.json
 
 ---
 
-## 📤 Output Sample (JSON)
+##  Output Sample (JSON)
 
 ```json
 {
@@ -131,9 +131,9 @@ data/processed/*.json
 
 ---
 
-## 📈 Future Roadmap
+##  Future Roadmap
 
-### 🔮 Planned Improvements
+###  Planned Improvements
 
 * **Advanced OCR**:
   Tích hợp **AWS Textract** để xử lý hoàn hảo CV dạng **2-column / complex layout**
