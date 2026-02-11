@@ -135,21 +135,17 @@ data/processed/*.json
 
 ### 🔮 Planned Improvements
 
-* **Advanced OCR**
+* **Advanced OCR**:
   Tích hợp **AWS Textract** để xử lý hoàn hảo CV dạng **2-column / complex layout**
 
-* **Transformer-based NER**
+* **Transformer-based NER**:
   Thử nghiệm **BERT / RoBERTa / LayoutLM** để nâng cao hiểu biết ngữ cảnh
 
-* **Cloud Deployment**
+* **Cloud Deployment**:
   Triển khai **Serverless Pipeline trên AWS** cho xử lý CV thời gian thực
 
-* **ATS Integration**
+* **ATS Integration**:
   Cung cấp REST API để tích hợp trực tiếp vào hệ thống tuyển dụng
 
 ---
 
-## 👤 Author
-
-Developed for **AI / Data Engineering / NLP Portfolio**
-Feel free to fork, improve, and contribute 🚀
