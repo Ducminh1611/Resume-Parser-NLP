@@ -7,12 +7,12 @@ from tika import parser
 class ResumeParserPipeline:
     def __init__(self, model_path):
         """Khởi tạo Pipeline và nạp 'bộ não' AI vào bộ nhớ."""
-        print(f"🧠 Đang khởi động AI từ: {model_path}...")
+        print(f" Đang khởi động AI từ: {model_path}...")
         try:
             self.nlp = spacy.load(model_path)
-            print("✅ AI đã sẵn sàng!")
+            print(" AI đã sẵn sàng!")
         except Exception as e:
-            print(f"❌ Lỗi khi tải mô hình: {e}")
+            print(f" Lỗi khi tải mô hình: {e}")
             self.nlp = None
 
     def _extract_text(self, pdf_path):
@@ -33,7 +33,7 @@ class ResumeParserPipeline:
 
     def process_resume(self, pdf_path):
         """Hàm chính: Xử lý End-to-End một file CV."""
-        print(f"\n📄 Đang xử lý: {os.path.basename(pdf_path)}")
+        print(f"\n Đang xử lý: {os.path.basename(pdf_path)}")
         
         # 1. Trích xuất Text
         raw_text = self._extract_text(pdf_path)
@@ -77,7 +77,7 @@ if __name__ == "__main__":
     if os.path.exists(TEST_PDF):
         final_result = parser_system.process_resume(TEST_PDF)
         
-        print("\n📊 KẾT QUẢ ĐẦU RA (JSON FORMAT DÀNH CHO DATA LAKE):")
+        print("\n KẾT QUẢ ĐẦU RA (JSON FORMAT DÀNH CHO DATA LAKE):")
         # In ra định dạng JSON đẹp mắt
         print(json.dumps(final_result, indent=4, ensure_ascii=False))
         
@@ -87,6 +87,6 @@ if __name__ == "__main__":
         
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(final_result, f, indent=4, ensure_ascii=False)
-        print(f"\n💾 Đã lưu kết quả tại: {output_file}")
+        print(f"\n Đã lưu kết quả tại: {output_file}")
     else:
-        print(f"⚠️ Không tìm thấy file {TEST_PDF} để test. Hãy copy 1 file PDF vào đó nhé!")
+        print(f" Không tìm thấy file {TEST_PDF} để test. Hãy copy 1 file PDF vào đó nhé!")
